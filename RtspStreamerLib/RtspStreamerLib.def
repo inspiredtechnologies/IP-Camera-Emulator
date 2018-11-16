@@ -1,0 +1,9 @@
+LIBRARY RtspStreamerLib
+EXPORTS
+	CreateRtspStreamerLib
+	DestroyRtspStreamerLib
+	StartStreamLib
+	StopStreamLib
+	GetStreamStatusLib
+	GetStreamRateLib
+	GetVlcVersionLib
