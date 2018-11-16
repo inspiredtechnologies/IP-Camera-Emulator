@@ -123,7 +123,7 @@ namespace IpCameraEmulatorStd
             {
               if (channel.Id != CurrentChannels[0].Id)
               {
-                if (channel.RtspPort == CurrentChannels[0].RtspPort)
+                if (channel.RtspPort == (int)updRtspPort.Value)
                   return true;
               }
             }
