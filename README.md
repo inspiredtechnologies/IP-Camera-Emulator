@@ -7,6 +7,6 @@ This software tool was created to perform load testing of video management softw
 * libvlc.dll, libvlccore.dll and the plugins folder from VLC (32-bit editions. Ver 2.2.6, 1.1.9 seem to work well)
 * SystemMetrics .NET library (https://github.com/inspiredtechnologies/SystemMetrics/)
 
-To build the RtspStreamerLib DLL, you will need the VLC SDK C++ headers and 32-bit MSVC libraries (try https://github.com/RSATom/libvlc-sdk). I was also able to generate the required LIB files from the VLC DLLs (http://www.asawicki.info/news_1420_generating_lib_file_for_dll_library.html).
+To build the RtspStreamerLib DLL, you will need the VLC SDK C++ headers and 32-bit MSVC libraries (try https://github.com/RSATom/libvlc-sdk). I was also able to generate the required LIB files from the official VLC DLLs (http://www.asawicki.info/news_1420_generating_lib_file_for_dll_library.html).
 
 
