@@ -216,7 +216,7 @@ namespace IpCameraEmulatorStd
     {
       try
       { 
-        if (lvMain.SelectedItems.Count > 0)
+        if (lvMain.SelectedItems.Count > 0 && !_EmulatorStarted)
         {
           EmulatorChannel selectedChannel = (EmulatorChannel)lvMain.SelectedItems[0].Tag;
           if (selectedChannel == null)
