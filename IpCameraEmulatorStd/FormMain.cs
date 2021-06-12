@@ -18,6 +18,7 @@ namespace IpCameraEmulatorStd
     private SystemConfiguration _AppSettings = new SystemConfiguration(@"IpCameraEmulatorStd");
     private Collection<EmulatorChannel> _Channels = null;
     private bool _EmulatorStarted = false;
+    private bool _AutoStart = false;
 
     public FormMain()
     {
@@ -33,10 +34,27 @@ namespace IpCameraEmulatorStd
         DisplaySystemResourceUsage(_AppSettings.ShowSystemResourceUsage);
         _Channels = _AppSettings.Channels;
         RefreshChannelsList();
+
+        string[] args = Environment.GetCommandLineArgs();
+        if (args != null && args.Length > 1)
+        {
+          if (args[1].Equals(@"-autostart", StringComparison.InvariantCultureIgnoreCase))
+          {
+            _AutoStart = true;
+          }
+        }
       }
       catch (Exception ex)
       {
         MessageBox.Show(ex.ToString());
+      }
+    }
+
+    private void FormMain_Shown(object sender, EventArgs e)
+    {
+      if (_AutoStart)
+      {
+        tbStart.PerformClick();
       }
     }
 

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("IpCameraEmulatorStd")]
-[assembly: AssemblyCopyright("Copyright © Inspired Technologies 2018")]
+[assembly: AssemblyCopyright("Copyright © Inspired Technologies 2018-2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

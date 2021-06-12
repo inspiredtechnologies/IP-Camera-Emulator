@@ -237,7 +237,7 @@
       // tsslStatus
       // 
       this.tsslStatus.Name = "tsslStatus";
-      this.tsslStatus.Size = new System.Drawing.Size(714, 18);
+      this.tsslStatus.Size = new System.Drawing.Size(715, 18);
       this.tsslStatus.Spring = true;
       // 
       // tsslCpuLabel
@@ -278,7 +278,7 @@
       // tsslNetLabel
       // 
       this.tsslNetLabel.Name = "tsslNetLabel";
-      this.tsslNetLabel.Size = new System.Drawing.Size(32, 18);
+      this.tsslNetLabel.Size = new System.Drawing.Size(31, 18);
       this.tsslNetLabel.Text = "NET:";
       // 
       // tsslNwUsage
@@ -363,6 +363,7 @@
       this.Text = "IP Camera Emulator";
       this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
       this.Load += new System.EventHandler(this.FormMain_Load);
+      this.Shown += new System.EventHandler(this.FormMain_Shown);
       this.tsMain.ResumeLayout(false);
       this.tsMain.PerformLayout();
       this.cmsMain.ResumeLayout(false);
